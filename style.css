@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    background-color: #323437;
+    font-family: "Roboto Mono", monospace;
+  }
+  h1 {
+    color: #e2b714;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 4rem;
+    color: #e2b714;
+  }
+  .timer {
+    font-size: 1.2rem;
+  }
+  .rst-game {
+    color: #e2b714;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: rgb(60, 60, 60);
+    border: 0;
+  }
+  .typer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 1300px;
+    height: 140px;
+    margin: 4rem 4rem;
+    color: white;
+    opacity: 0.7;
+    line-height: 35px;
+    font-size: 1.5rem;
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  .typer.focused {
+    filter: blur(0);
+    outline: none;
+  }
+  .words {
+    opacity: 0.7;
+    margin-right: 1rem;
+  }
+  .typercontainer {
+    position: relative;
+    margin: 50px;
+  }
+  .overlay {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    top: 3rem;
+    left: 35rem;
+    transition: opacity 0.3s ease;
+  }
+  .overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .words span {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+  }
+  .correct {
+    color: green;
+  }
+  .wrong {
+    color: red;
+  }
+  
